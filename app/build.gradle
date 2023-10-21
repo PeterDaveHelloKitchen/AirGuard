@@ -54,6 +54,11 @@ android {
             resValue "bool", "debug", "true"
         }
     }
+
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+
     compileOptions {
         coreLibraryDesugaringEnabled true
         sourceCompatibility JavaVersion.VERSION_17
